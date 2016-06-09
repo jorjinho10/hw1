@@ -38,8 +38,7 @@ public class Maintwo {
                 epsilon=-100;
             }
         }
-        System.out.println("Введенное число: "+ massize);
-        System.out.println("Номер наименьшего "+ minind);
+        System.out.println("Наименьший номер элемента ("+a[minind-1]+") удовлетворяющего условию: № "+ minind);
     }
 
 }
