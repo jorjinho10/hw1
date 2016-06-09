@@ -8,10 +8,10 @@ public class Hellotwo {
     System.out.println("          1");
     System.out.println("a = ------------- ;");
     System.out.println(" n   (n+1)*(n+1)");
-    System.out.println("");
     System.out.println("===================");
-    System.out.println("");
-    System.out.println("Введите число элементов последовательности: ");
+    System.out.println("Условие: a < epsilon;");
+    System.out.println("          n");
+    System.out.println("===================");
     }
 
 }

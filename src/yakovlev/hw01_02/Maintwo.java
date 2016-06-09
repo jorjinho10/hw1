@@ -11,7 +11,7 @@ public class Maintwo {
 
         Hellotwo hi = new Hellotwo();
         hi.hello();
-
+        System.out.println("Введите число элементов последовательности: ");
         Scanner input = new Scanner(System.in);
         if( input.hasNextInt() )
            {// Читаем с клавиатуры целое число
