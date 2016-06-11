@@ -1,12 +1,14 @@
 package yakovlev.hw01_03;
 import java.util.Scanner;
-import yakovlev.hw01_03.hello.HelloThree;
 
+import yakovlev.hw01_03.hello.HelloThree;
 
 public class MainThree {
 
-    double minotr=0.0;
-    double maxotr=0.0;
+    public static void main (String[] args) {
+
+    double a=0.0;
+    double b=0.0;
     double h=0.0;
     double n=0.0;
     double f=0.0;
@@ -19,28 +21,31 @@ public class MainThree {
     Scanner input = new Scanner(System.in);
     if( input.hasNextDouble() )
     {// Считываем с клавиатуры размерность матрицы
-        minotr = input.nextInt();}
+        a = input.nextDouble();}
 
     System.out.println("Введите верхнюю границу отрезка для вычисления функции: b = ");
     Scanner inputt = new Scanner(System.in);
     if( inputt.hasNextDouble() )
     {// Считываем с клавиатуры размерность матрицы
-        maxotr = inputt.nextDouble();}
+        b = inputt.nextDouble();}
 
     System.out.println("Введите шаг расчета: h = ");
-    Scanner inputt = new Scanner(System.in);
+    Scanner inputtt = new Scanner(System.in);
     if( inputtt.hasNextDouble() )
     {// Считываем с клавиатуры размерность матрицы
         h = inputtt.nextDouble();}
 
-    n = ((Math.abs(maxotr-minotr))/h)+1;
+    n = ((Math.abs(b-a))/h)+1;
 
-    System.out.println("|  x  |  F(x)  |");
+    System.out.println("|  x  |  F(x) |");
+        System.out.println("----------------");
     for (int i=0; i<n; i++) {
-        x=minotr+(i*h);
+        x=a+(i*h);
+        x= Math.round(x * 100.0) / 100.0; //округление до 2-х знаков после запятой
         f=(Math.tan(2*x))-3;
+        f= Math.round(f * 100.0) / 100.0; //округление до 2-х знаков после запятой
         System.out.println("| "+x+" | "+f+" |");
     }
 
 
-}
+}}
