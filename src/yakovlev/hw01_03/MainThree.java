@@ -20,19 +20,19 @@ public class MainThree {
     System.out.println("Введите нижнюю границу отрезка для вычисления функции: a = ");
     Scanner input = new Scanner(System.in);
     if( input.hasNextDouble() )
-    {// Считываем с клавиатуры размерность матрицы
+    {// Считываем с клавиатуры нижнюю границу отрезка
         a = input.nextDouble();}
 
     System.out.println("Введите верхнюю границу отрезка для вычисления функции: b = ");
     Scanner inputt = new Scanner(System.in);
     if( inputt.hasNextDouble() )
-    {// Считываем с клавиатуры размерность матрицы
+    {// Считываем с клавиатуры верхнюю границу отрезка
         b = inputt.nextDouble();}
 
     System.out.println("Введите шаг расчета: h = ");
     Scanner inputtt = new Scanner(System.in);
     if( inputtt.hasNextDouble() )
-    {// Считываем с клавиатуры размерность матрицы
+    {// Считываем с клавиатуры шаг расчета
         h = inputtt.nextDouble();}
 
     n = ((Math.abs(b-a))/h)+1;
