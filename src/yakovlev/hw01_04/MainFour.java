@@ -1,6 +1,9 @@
 package yakovlev.hw01_04;
 import java.util.Scanner;
 import yakovlev.hw01_04.hello.HelloFour;
+import yakovlev.hw01_04.hello.MassivBuilder;
+import yakovlev.hw01_04.hello.MassivOfSum;
+import yakovlev.hw01_04.hello.MaxShow;
 
 public class MainFour {
 
@@ -17,12 +20,14 @@ public class MainFour {
         {// Считываем с клавиатуры нижнюю границу отрезка
             n = input.nextInt();}
 
-        double [] a;
-        a = new double[n];
-        for (int i=0; i<n; i++) {
-        a[i]=Math.random()*10;
-            a[i]=Math.round(a[i] * 100.0) / 100.0)
-            System.out.println(a[i]);
+        MassivBuilder a = new MassivBuilder();
+
+        MassivOfSum m = new MassivOfSum();
+        System.out.println("--------------------");
+
+        MaxShow max = new MaxShow();
+        max.maxshow(m.maxfinder(n,a.massiv(n)));
+
         }
     }
-}
+
